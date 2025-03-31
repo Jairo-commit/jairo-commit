@@ -1,0 +1,17 @@
+header{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+section{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+}
