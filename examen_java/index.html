@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Busca tu personaje</h1>
+    </header>
+
+    <main>
+        <section id="filters">
+            <h2>Nombre</h2>
+            <input type="text" id="name">
+            <p>
+                <label>
+                    <span>Status</span>
+                    <select id="status">
+                        <option></option>
+                        <option>alive</option>
+                        <option>dead</option>
+                        <option>unknown</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Gender</span>
+                    <select id="gender">
+                        <option></option>
+                        <option>female</option>
+                        <option>male</option>
+                        <option>genderless</option>
+                        <option>unknown</option>
+                    </select>
+                </label>
+            </p>
+            <button id="button_search" onclick="obtenerValorInput()">Buscar</button>
+        </section>
+        <section id="list">
+            <h2>Lista de personajes</h2>
+            <ol id="show-info"></ol>
+        </section>
+    </main>
+
+    
+</body>
+</html>
