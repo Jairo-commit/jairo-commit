@@ -3,3 +3,12 @@
   height: 500px;
   background-color: beige;
 }
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin-top: 10px;
+  border-radius: 50px;
+  list-style: none;
+}

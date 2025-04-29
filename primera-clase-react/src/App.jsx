@@ -1,24 +1,22 @@
-import { useState } from 'react';
 import './App.css';
+import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+
+import Home from './components/home';
+import Listado from './components/listado';
 
 function App() {
-
-  const [cont, setCont] = useState(0);
-
-  const suma = () => {
-    return setCont(cont+1);
-  }
-  const resta = () => {
-    return setCont(cont-1);
-  }
-
   return(
-    <div id='container'>
-      <h1>{cont}</h1>
-      <button onClick={suma}>sumar</button>
-      <button onClick={resta}>restar</button>
-    </div>
-  );
+    <BrowserRouter>
+      <nav>
+        <Link to="/home" >Home</Link>
+        <Link to="/listado" >Listado</Link>
+      </nav>
+      <Routes>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/listado" element={<Listado></Listado>}></Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App
+export default App;
